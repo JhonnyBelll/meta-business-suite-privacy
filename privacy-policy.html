@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Política de Privacidad — Meta Business Suite Notifier</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1e21;
+    --muted: #65676b;
+    --accent: #1877F2;
+    --border: #e4e6eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #18191a;
+      --text: #e4e6eb;
+      --muted: #b0b3b8;
+      --accent: #4599ff;
+      --border: #3a3b3c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #18191a;
+    --text: #e4e6eb;
+    --muted: #b0b3b8;
+    --accent: #4599ff;
+    --border: #3a3b3c;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+
+  p, li {
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .highlight {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border-left: 3px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Meta Business Suite Notifier · Última actualización: agosto 2026</p>
+
+    <div class="highlight">
+      <strong>Resumen:</strong> esta extensión no recolecta, almacena en servidores externos, comparte ni vende ningún dato personal del usuario. Toda la información se procesa y guarda únicamente de forma local, en el propio navegador del usuario.
+    </div>
+
+    <h2>1. Qué hace la extensión</h2>
+    <p>
+      Meta Business Suite Notifier muestra el número de mensajes no leídos de Meta Business Suite directamente en el título de la pestaña del navegador, y reproduce un sonido corto cuando llega un mensaje nuevo. Es una extensión independiente, creada por un desarrollador externo, sin afiliación oficial con Meta ni Facebook.
+    </p>
+
+    <h2>2. Datos a los que accede la extensión</h2>
+    <p>
+      Para funcionar, la extensión lee un único elemento visible en la página de Meta Business Suite: el contador de mensajes no leídos (un número). Este dato:
+    </p>
+    <ul>
+      <li>Se usa únicamente para actualizar el título de la pestaña y decidir si reproducir el sonido de aviso.</li>
+      <li>No se guarda de forma permanente.</li>
+      <li>No se envía a ningún servidor, ni propio ni de terceros.</li>
+      <li>No se comparte con nadie, bajo ninguna circunstancia.</li>
+    </ul>
+    <p>
+      La extensión <strong>no</strong> lee el contenido de los mensajes ni conversaciones, no accede a información personal del usuario (nombre, correo, etc.), y no rastrea la navegación fuera del dominio de Meta Business Suite.
+    </p>
+
+    <h2>3. Datos almacenados localmente</h2>
+    <p>
+      La única información que la extensión guarda es una preferencia simple: si las notificaciones están activadas o desactivadas. Este valor se guarda con la API <code>chrome.storage.local</code> (o <code>browser.storage.local</code> en Firefox), exclusivamente en el navegador del propio usuario. Nunca sale de tu equipo.
+    </p>
+
+    <h2>4. Permisos utilizados</h2>
+    <ul>
+      <li><strong>storage:</strong> para guardar localmente si las notificaciones están activadas o no.</li>
+      <li><strong>Acceso a business.facebook.com:</strong> necesario para que la extensión pueda leer el contador de mensajes no leídos en esa página específica.</li>
+    </ul>
+
+    <h2>5. Código remoto</h2>
+    <p>
+      La extensión no descarga, genera ni ejecuta código remoto. Todo el código fuente está incluido en el paquete de la extensión.
+    </p>
+
+    <h2>6. Cambios a esta política</h2>
+    <p>
+      Si esta política cambia en el futuro, se actualizará esta misma página con la fecha correspondiente.
+    </p>
+
+    <h2>7. Contacto</h2>
+    <p>
+      Ante cualquier consulta sobre esta política de privacidad, podés contactar al desarrollador de la extensión, Jhonny Guedez, a través de la ficha de la extensión en la tienda correspondiente.
+    </p>
+
+    <footer>
+      Meta Business Suite Notifier no está afiliado, respaldado ni patrocinado por Meta Platforms, Inc.
+    </footer>
+  </div>
+</body>
+</html>
